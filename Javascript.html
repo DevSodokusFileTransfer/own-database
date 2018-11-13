@@ -1,0 +1,62 @@
+<html>
+   
+<head>
+
+<title>Javascript.html</title>
+
+</head>
+  
+<body>
+
+<h1 id="Element1" style="color:blue;" onmouseover="paint_green()" onmouseout="paint_blue()">Meine manchmal blaue &Uuml;berschrift</h1>
+
+<h1 id="okay" style="color:darkblue;">anderes Element</h1>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<button id="12345" class="btn" onclick="BC()" name="123">Black</button>
+
+<button id="125" class="btn" onclick="GC()" name="123">Green</button>
+
+<button id="345" class="btn" onclick="T()" name="123">Text</button>
+
+<button id="12" class="btn" onclick="TGC()" name="Baum1">Text + Green</button>
+
+<p>
+
+<p id="TexttoChange" class="Switch" name="TexttoChange">000</p>
+
+ <script>
+
+    function paint_green() {
+      document.getElementById("Element1").style.color = "#04B404";
+      document.getElementById("okay").style.color = "#04B404";
+    }
+    
+    function paint_blue() {
+      document.getElementById("Element1").style.color = "#0101DF";
+      document.getElementById("okay").style.color = "darkblue";
+    }
+  
+    function BC() {  
+      document.getElementById("TexttoChange").style.color = "black";
+      document.getElementById("TexttoChange").innerHTML = "000";
+    }
+
+    function TGC() {
+      document.getElementById("TexttoChange").style.color = "green";
+      document.getElementById("TexttoChange").innerHTML = "mein toller Text";
+    }
+    function GC() {  
+      document.getElementById("TexttoChange").style.color = "green";
+      document.getElementById("TexttoChange").innerHTML = "000";
+    }
+    function T() {  
+      document.getElementById("TexttoChange").style.color = "black";
+      document.getElementById("TexttoChange").innerHTML = "mein toller Text";
+    }
+</script>
+
+</body>
+
+</html>
