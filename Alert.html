@@ -1,0 +1,37 @@
+<html>
+
+<head>
+
+<title>Alert.html</title>
+
+</head>
+
+<body>
+
+<script>
+'use strict';
+var name = '';
+var alter = '';
+const erwachsen = 18;
+while (alter < erwachsen) {
+  name = prompt('Bitte geben Sie Ihren Namen ein!', name);
+  alter = prompt('Bitte geben Sie Ihr Alter ein!', alter);
+  if (isNaN(alter)) {
+    alert('Bitte geben Sie keine Buchstaben ein!');
+    alter='';
+  }
+  if (alter < erwachsen) {  alert('Du kommst hier net rein!')} 
+}
+if (alter = erwachsen) {
+alert('Hallo, ' + name);
+}
+if (alter > erwachsen) {
+alert('Hallo, ' + name);
+}
+</script>
+
+</body>
+
+</html>
+
+
